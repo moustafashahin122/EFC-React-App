@@ -1,0 +1,14 @@
+#pagelogo {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  color: #d4403a;
+  font-size: 1.5rem;
+  line-height: 0;
+  transition: 0.5s;
+}
+#pagelogo:hover {
+  text-shadow: #d4403a 0px 5px 15px;
+}
+.active {
+  color: #d4403a;
+}
