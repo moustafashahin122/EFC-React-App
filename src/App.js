@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import ErrorPage from "./components/ErrorPage";
 import Menu from "./components/Menu";
 import About from "./components/About";
+import Form from "./components/Form";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Slider /> },
       { path: "/Menu", element: <Menu /> },
       { path: "/About", element: <About /> },
+      { path: "/Form", element: <Form/>}
     ],
   },
 ]);
