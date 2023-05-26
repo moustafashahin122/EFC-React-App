@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./CSS/Navbar.css";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const { cartItemsCount } = useSelector((state) => state.Cart);
+
   return (
     <nav className="navbar navbar-expand-md mb-5 sticky-top shadow ">
       <div className="container">
@@ -42,9 +45,11 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+
           </ul>
           <button className="btn btn-danger">
             <i class="bi bi-cart4"></i>
+            <span>{cartItemsCount}</span>
           </button>
         </div>
       </div>
