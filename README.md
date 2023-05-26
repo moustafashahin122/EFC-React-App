@@ -6,11 +6,20 @@ The app is called EFC, which stands for "Electronic Food Court", and it allows u
 
 To get started with the app, follow these steps:
 
-Clone the repository to your local machine: git clone https://github.com/your-username/efc.git
+Clone the repository to your local machine: git clone https://github.com/moustafashahin122/efc.git
 Navigate to the project directory: cd efc
 Install the dependencies: npm install
 Start the development server: npm start
 The app should now be running on http://localhost:3000/.
+
+```
+ git clone https://github.com/moustafashahin122/efc.git
+cd efc
+ npm install
+ npm start
+
+
+```
 
 ## Features
 
