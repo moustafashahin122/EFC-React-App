@@ -3,7 +3,7 @@ import "./CSS/App.css"
 function About() {
   return (
     <>
-    <div className="reserve-table">
+    <div className=" reserve-table">
       <img
         className="header-reserve"
         src={require("../assets/background.jpg")}

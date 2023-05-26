@@ -15,9 +15,7 @@ const Form = () => {
     const handlePassword = (e) => {
         setPassword(e.target.value);
     }
-    useEffect(() => {
 
-    }, [email, password])
     return (
         <div className="container">
             <div className="row justify-content-center">
