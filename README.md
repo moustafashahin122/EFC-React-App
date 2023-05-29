@@ -1,6 +1,6 @@
 ### EFC React App
 
-This is a react app called EFC. it allows users to browse a resturant menu items and place orders online.
+-	This React app called EFC. allows users to browse restaurant menu items and place orders online.
 
 ## Getting Started
 
