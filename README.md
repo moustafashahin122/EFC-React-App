@@ -1,6 +1,6 @@
 ### EFC React App
 
-The app is called EFC, which stands for "Electronic Food Court", and it allows users to browse KFC menu items and place orders online.
+This is a react app called EFC. it allows users to browse a resturant menu items and place orders online.
 
 ## Getting Started
 
@@ -25,13 +25,11 @@ cd efc
 
 The EFC app includes the following features:
 
-## Browse KFC menu items
+## Browse menu items
 
 View menu item details, including descriptions and prices
 Add menu items to a cart
 ##Dependencies
 The EFC app has the following dependencies:
 
-## License
 
-The EFC app is licensed under the MIT License.
