@@ -12,24 +12,24 @@ function Card(props) {
 
     const dispatch = useDispatch();
 
-    useEffect((id) => {
+    useEffect(() => {
         dispatch(ToCart(id));
     }, []);
 
 
 
-    const add = (id) => {
+    const add = () => {
         // setquantity(quantity + 1);
         // console.log(quantity);
         dispatch(addToCart(id));
 
     };
 
-    const remove = (id) => {
+    const remove = () => {
         // setquantity(quantity - 1);
         dispatch(removeFromCart(id));
     };
-    const q1 = (id) => {
+    const q1 = () => {
         // setquantity(quantity - 1);
         dispatch(removeFromCart(id));
 
@@ -58,10 +58,10 @@ function Card(props) {
                                 {price}$
                             </p>
 
-                            <div className="c-button" style={quantity <= 0 ? { display: "none" } : { display: "" }}>
-                                <button type="button" onClick={() => add(id)} className="btn btn-danger" >+</button>
+                            <div className="c-button" style={quantity == 0 ? { display: "none" } : { display: "" }}>
+                                <button type="button" onClick={add} className="btn btn-danger" >+</button>
                                 <span className="count">{quantity}</span>
-                                <button type="button" className="btn btn-danger" onClick={() => remove(id)} >-</button>
+                                <button type="button" className="btn btn-danger" onClick={remove} >-</button>
                             </div>
                             <p className="sale">
                                 sale 50%
@@ -74,8 +74,8 @@ function Card(props) {
                             alt="" srcset=""
                         />
                     </span>
-                    <button className="card-button btn btn-danger" style={quantity > 0 ? { display: "none" } : { display: "" }} onClick={() => add(id)} >Add To Card </button>
-                    <button className="card-button btn btn-danger" onClick={() => q1(id)} style={quantity <= 0 ? { display: "none" } : { display: "" }} >remove in myCard </button>
+                    <button className="card-button btn btn-danger" style={quantity > 0 ? { display: "none" } : { display: "" }} onClick={add} >Add To Card </button>
+                    <button className="card-button btn btn-danger" onClick={q1} style={quantity == 0 ? { display: "none" } : { display: "" }} >remove in myCard </button>
                 </div>
             </div>
         </div>
