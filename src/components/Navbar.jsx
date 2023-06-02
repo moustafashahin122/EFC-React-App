@@ -45,12 +45,17 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Cart">
+                <button className="btn btn-danger">
+                  <i class="bi bi-cart4"></i>
+                  <span>{cartItemsCount}</span>
+                </button>
+              </Link>
+            </li>
 
           </ul>
-          <button className="btn btn-danger">
-            <i class="bi bi-cart4"></i>
-            <span>{cartItemsCount}</span>
-          </button>
+
         </div>
       </div>
     </nav>

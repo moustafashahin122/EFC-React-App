@@ -1,32 +1,37 @@
 import React, { useEffect, useState } from "react";
 import "./CSS/Card.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromCart } from "../redux/slices/CartSlice";
+import { addToCart, removeFromCart, ToCart } from "../redux/slices/CartSlice";
 
 // import { BsCartPlusFill} from "react-icons/ai";
 
 function Card(props) {
-    const { title, description, price } = props.product;
-    const { cartItemsCount } = useSelector((state) => state.Cart);
+    const { id, title, description, price } = props.product;
+    // const { cartItemsCount } = useSelector((state) => state.Cart);
+    const quantity = useSelector((state) => state.Cart.cartItems[id]);
+
     const dispatch = useDispatch();
 
+    useEffect(() => {
+        dispatch(ToCart(id));
+    }, []);
 
-    const [quantity, setquantity] = useState(0);
+
 
     const add = () => {
-        setquantity(quantity + 1);
-        console.log(quantity);
-        dispatch(addToCart());
+        // setquantity(quantity + 1);
+        // console.log(quantity);
+        dispatch(addToCart(id));
 
     };
 
     const remove = () => {
-        setquantity(quantity - 1);
-        dispatch(removeFromCart());
+        // setquantity(quantity - 1);
+        dispatch(removeFromCart(id));
     };
     const q1 = () => {
-        setquantity(quantity - 1);
-        dispatch(removeFromCart());
+        // setquantity(quantity - 1);
+        dispatch(removeFromCart(id));
 
     };
 
@@ -53,7 +58,7 @@ function Card(props) {
                                 {price}$
                             </p>
 
-                            <div className="c-button" style={quantity <= 0 ? { display: "none" } : { display: "" }}>
+                            <div className="c-button" style={quantity == 0 ? { display: "none" } : { display: "" }}>
                                 <button type="button" onClick={add} className="btn btn-danger" >+</button>
                                 <span className="count">{quantity}</span>
                                 <button type="button" className="btn btn-danger" onClick={remove} >-</button>
@@ -70,7 +75,7 @@ function Card(props) {
                         />
                     </span>
                     <button className="card-button btn btn-danger" style={quantity > 0 ? { display: "none" } : { display: "" }} onClick={add} >Add To Card </button>
-                    <button className="card-button btn btn-danger" onClick={q1} style={quantity <= 0 ? { display: "none" } : { display: "" }} >remove in myCard </button>
+                    <button className="card-button btn btn-danger" onClick={q1} style={quantity == 0 ? { display: "none" } : { display: "" }} >remove in myCard </button>
                 </div>
             </div>
         </div>

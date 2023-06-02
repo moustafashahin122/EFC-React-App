@@ -8,6 +8,7 @@ import Form from "./components/Form";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getAllProducts } from "./redux/slices/ProductsSlice";
+import Cart from "./components/Cart";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Slider /> },
       { path: "/Menu", element: <Menu /> },
+      { path: "/Cart", element: <Cart /> },
       { path: "/About", element: <About /> },
       { path: "/Form", element: <Form /> },
     ],
