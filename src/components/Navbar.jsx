@@ -45,6 +45,11 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Cart">
+                Cart
+              </Link>
+            </li>
 
           </ul>
           <button className="btn btn-danger">
