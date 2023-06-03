@@ -14,7 +14,7 @@ The app should now be running on http://localhost:3000/.
 
 ```
  git clone https://github.com/moustafashahin122/efc.git
-cd efc
+ cd efc
  npm install
  npm start
 
