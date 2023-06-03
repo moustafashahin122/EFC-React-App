@@ -29,6 +29,7 @@ The EFC app includes the following features:
 
 View menu item details, including descriptions and prices
 Add menu items to a cart
+open cart to show selected items
 ##Dependencies
 The EFC app has the following dependencies:
 
