@@ -36,7 +36,7 @@ function Card(props) {
     };
 
     return (
-        <div className="col-12 col-md-6 col-lg-3" >
+        <div className="= col-md-6 col-lg-6" >
             <div className="card1 ">
                 <div className="card-detials">
                     <div className="img-contener">
@@ -59,9 +59,9 @@ function Card(props) {
                             </p>
 
                             <div className="c-button" style={quantity == 0 ? { display: "none" } : { display: "" }}>
-                                <button type="button" onClick={add} className="btn btn-danger" >+</button>
+                                <button type="button" onClick={add} className="btn btn-danger d" >+</button>
                                 <span className="count">{quantity}</span>
-                                <button type="button" className="btn btn-danger" onClick={remove} >-</button>
+                                <button type="button" className="btn btn-danger d" onClick={remove} >-</button>
                             </div>
                             <p className="sale">
                                 sale 50%

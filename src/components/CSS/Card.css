@@ -62,12 +62,11 @@ body {
   text-align: center;
 }
 .c-button span {
-  padding: 2rem;
+  padding: 2rem !important;
 }
 .c-button input[type="button"] {
-  background-color: #008bf8;
   border: none;
-  padding: 2rem;
+  /* padding: 2rem; */
   border-radius: 5px;
   color: #f5f5f5;
   font-size: 1rem;
@@ -176,6 +175,6 @@ img {
 span img {
   width: 70px;
   position: absolute;
-  left: 241px;
+  right: 9px;
   top: 7px;
 }
