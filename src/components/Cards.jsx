@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart, ToCart } from "../redux/slices/CartSlice";
 
 // import { BsCartPlusFill} from "react-icons/ai";
+// import { BsCartPlusFill} from "react-icons/ai";
 
 function Card(props) {
     const { id, title, description, price } = props.product;
