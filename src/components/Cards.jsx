@@ -3,6 +3,11 @@ import "./CSS/Card.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart, ToCart } from "../redux/slices/CartSlice";
 
+  // const { cartItemsCount } = useSelector((state) => state.Cart);
+    // const { cartItemsCount } = useSelector((state) => state.Cart);
+    // const { cartItemsCount } = useSelector((state) => state.Cart);
+    // const { cartItemsCount } = useSelector((state) => state.Cart);
+    // const { cartItemsCount } = useSelector((state) => state.Cart);
 
 function Card(props) {
     const { id, title, description, price } = props.product;
