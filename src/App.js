@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getAllProducts } from "./redux/slices/ProductsSlice";
 import Cart from "./components/Cart";
+import Signup from "./components/FormSignup"
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "/Cart", element: <Cart /> },
       { path: "/About", element: <About /> },
       { path: "/Form", element: <Form /> },
+      { path: "/signup", element: <Signup /> },
     ],
   },
 ]);

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {Link} from "react-router-dom"
+
 const Form = () => {
     const [email, setEmail] = useState({ value: "", error: false });
     const [password, setPassword] = useState("");
@@ -19,13 +20,11 @@ const Form = () => {
     return (
         <div className="container">
             <div className="row justify-content-center">
-                <div className="col-12 col-md-6">
-                    <Link className = "form-brand" to="/Form">
-                        Sign In
-                    </Link>
-                    <form>
+                <div className="col-12 col-md-6 t">
+                    <form >
+                        <h1 className="text-center">login</h1>
                         <div className="mb-3">
-                            <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                            <label htmlFor="exampleInputEmail1" className="form-label ">Email address</label>
                             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={email.value} onChange={(e) => { handleEmail(e) }} />
                             {email.error ? (
                                 <div id="emailHelp" className="form-text">Your mail must be more than 3 characters </div>
@@ -36,7 +35,12 @@ const Form = () => {
                             <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                             <input type="password" className="form-control" id="exampleInputPassword1" value={password} onChange={(e) => { handlePassword = (e) }} />
                         </div>
+                        <div className="text-center mb-4">
                         <button type="submit" className="btn btn-danger">Submit</button>
+                        </div>
+                    <Link className = "form-brand  text-end " to="/Signup">
+                        Sign In
+                    </Link>
                     </form>
                 </div>
             </div>
