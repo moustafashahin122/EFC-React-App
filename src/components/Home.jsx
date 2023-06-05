@@ -17,7 +17,7 @@ const Home = () => {
      <Card_Item />
      <Card_Item />
      </div>
-      <Slider />
+      <Slide1 />
     </>
   );
 };
