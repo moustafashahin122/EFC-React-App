@@ -1,0 +1,9 @@
+#cartSlide {
+  width: 25%;
+  height: 100vh;
+  background-color: #d4403a;
+  position: absolute;
+  right: -25%;
+  top: 56px;
+  z-index: 2;
+}
