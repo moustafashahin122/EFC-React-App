@@ -15,12 +15,12 @@ const Menu = () => {
   return (
     <>
      <Slider/>
-     <div className="f">
+     {/* <div className="f">
      <Card_Item />
      <Card_Item />
      <Card_Item />
      <Card_Item />
-     </div>
+     </div> */}
       <div className='container'>
         <div className='row'>
           {full ? (
