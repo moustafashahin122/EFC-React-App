@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Form = () => {
     const [email, setEmail] = useState({ value: "", error: false });
@@ -22,7 +22,7 @@ const Form = () => {
             <div className="row justify-content-center">
                 <div className="col-12 col-md-6 t">
                     <form >
-                        <h1 className="text-center">login</h1>
+                        <h1 className="text-center">Login</h1>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label ">Email address</label>
                             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={email.value} onChange={(e) => { handleEmail(e) }} />
@@ -35,12 +35,30 @@ const Form = () => {
                             <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                             <input type="password" className="form-control" id="exampleInputPassword1" value={password} onChange={(e) => { handlePassword = (e) }} />
                         </div>
-                        <div className="text-center mb-4">
-                        <button type="submit" className="btn btn-danger">Submit</button>
+                        
+                        <div id="kc-form-options" class="flex justify-between flex-wrap w-full">
+                            <div class="checkbox flex items-center">
+                                <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" /><label class="text-gray-600 mx-2"> Remember me</label>
+                            </div>
+                            <div>
+                                <Link className="text-decoration-none" to="/ResetPassword">
+                                    Reset password
+                                </Link>
+                            </div>
                         </div>
-                    <Link className = "form-brand  text-end " to="/Signup">
-                        Sign In
-                    </Link>
+                        
+
+
+                        <div className="text-center mb-4">
+                            <button type="submit" className="btn btn-danger">Log in</button>
+                        </div>
+                        <div className="text-center mb-4"><hr />
+                            Don't have account? <br />
+                            <Link className="text-decoration-none" to="/Signup">
+                                Create account
+                            </Link>
+
+                        </div>
                     </form>
                 </div>
             </div>
