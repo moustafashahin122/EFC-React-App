@@ -1,9 +1,7 @@
 import React from "react";
 import Card from "./Cards";
 import Slide1 from "./slider1";
-import Card_Item from "./Card item";
 import { useSelector } from "react-redux";
-import Navbar from "./Slider";
 import Slider from "./Slider";
 
 

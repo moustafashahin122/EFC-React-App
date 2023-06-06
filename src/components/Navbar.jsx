@@ -44,7 +44,10 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <Cart />
+          <div id="cartHolder">
+            <Cart></Cart>
+            <span id="cartQuantity" className=" rounded-circle">0</span>
+          </div>
         </div>
       </div>
     </nav>

@@ -1,0 +1,6 @@
+@media only screen and (max-width: 425px) {
+  #carouselExampleAutoplaying .carousel-item img {
+    height: 20vh;
+    object-fit: fill;
+  }
+}

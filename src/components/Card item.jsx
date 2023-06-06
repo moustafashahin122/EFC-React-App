@@ -2,11 +2,10 @@ import "./CSS/Card.css";
 
 function Card_Item() {
   return (
-    <div className="col-6 col-sm-4 col-lg-3 d-flex justify-content-center align-items-center">
+    <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center">
       <div class="M">
-        <div className="">
+        <div>
           <img
-            className=""
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/imagestemp/desktop/ic_beverages_kwt_0211.png"
             alt="مشروبات"
           />

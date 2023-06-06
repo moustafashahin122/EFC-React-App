@@ -12,3 +12,18 @@
 #navbarNav .active {
   color: #d4403a;
 }
+
+#cartHolder {
+  position: relative;
+}
+#cartQuantity {
+  font-size: 0.8em;
+  background-color: rgb(184, 127, 127);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  right: -10px;
+  top: -8px;
+  color: white;
+}

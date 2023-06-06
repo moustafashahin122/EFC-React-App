@@ -1,17 +1,19 @@
+import "./CSS/Slider.css";
 const Slider = () => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div
         id="carouselExampleAutoplaying"
         class="carousel slide"
-        data-bs-ride="carousel">
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
               className="d-block w-100"
               src={require("../assets/pi11.jpg")}
               alt="Pag Not Found"
-              />
+            />
           </div>
           <div class="carousel-item">
             <img
