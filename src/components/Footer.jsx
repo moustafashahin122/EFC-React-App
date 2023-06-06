@@ -4,6 +4,7 @@ import "./CSS/Footer.css";
 const Footer = () => {
   return (
     <footer className="footer text-center mt-4">
+      <hr />
       <h4>
         Order Now
         <br />
