@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Slider />
-      <div className="f row">
+      <div className="f row mx-auto">
         <Card_Item />
         <Card_Item />
         <Card_Item />
