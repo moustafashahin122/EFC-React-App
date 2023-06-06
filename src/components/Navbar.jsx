@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./CSS/Navbar.css";
 import Cart from "./Cart";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md mb-5 sticky-top shadow ">
+    <nav className="navbar navbar-expand-md bg-light mb-5 bg-body-secondary sticky-top shadow ">
       <div className="container">
         <Link className="navbar-brand" to="/">
           <span id="pagelogo">EFC</span>
@@ -24,24 +24,24 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav m-auto">
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">
+              <NavLink className="nav-link" to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Menu">
+              <NavLink className="nav-link" to="/Menu">
                 Menu
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Form">
+              <NavLink className="nav-link" to="/Form">
                 login
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/About">
+              <NavLink className="nav-link" to="/About">
                 About
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <Cart />
