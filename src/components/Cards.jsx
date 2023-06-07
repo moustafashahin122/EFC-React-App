@@ -36,7 +36,7 @@ function Card(props) {
     };
 
     return (
-        <div className="= col-md-6 col-lg-6" >
+        <div className="= col-12 col-md-6 col-lg-4" >
             <div className="card1 ">
                 <div className="card-detials">
                     <div className="img-contener">
@@ -54,19 +54,21 @@ function Card(props) {
                             </span>
                         </p>
                         <div className="d-flex my-2 justify-content-between" >
-                            <p className="price" >
+                            <p className="price m-auto" >
                                 {price}$
                             </p>
 
-                            <div className="c-button" style={quantity == 0 ? { display: "none" } : { display: "" }}>
-                                <button type="button" onClick={add} className="btn btn-danger d" >+</button>
-                                <span className="count">{quantity}</span>
-                                <button type="button" className="btn btn-danger d" onClick={remove} >-</button>
-                            </div>
-                            <p className="sale">
-                                sale 50%
-                            </p>
                         </div>
+
+
+                            <div className="c-button" style={quantity == 0 ? { display: "none" } : { display: "block" }}>
+                                <div className="row">
+                                    <button type="button" onClick={add} className="btn btn-danger d d-block col-4 " >+</button>
+                                <span className="count d-block col-4">{quantity}</span>
+                                <button type="button" className="btn btn-danger d d-block col-4" onClick={remove} >-</button>
+                                </div>
+
+                            </div>
                     </div>
                     <span>
                         <img className="new" /*style={quantity = "ture" ? {display:"none"} : {display:""} }*/

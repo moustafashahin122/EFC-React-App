@@ -68,7 +68,7 @@ body {
   text-align: center;
 }
 .c-button span {
-  padding: 2rem !important;
+  /* padding: 2rem !important; */
 }
 .c-button input[type="button"] {
   border: none;

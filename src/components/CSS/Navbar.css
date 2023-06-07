@@ -18,12 +18,12 @@
 }
 #cartQuantity {
   font-size: 0.8em;
-  background-color: rgb(184, 127, 127);
-  position: absolute;
+  background-color: rgb(110, 38, 29);
+  position: relative;
   width: 20px;
   height: 20px;
   text-align: center;
-  right: -10px;
-  top: -8px;
+  right: 9px;
+  top: -10px;
   color: white;
 }
