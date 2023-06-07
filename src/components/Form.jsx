@@ -36,19 +36,16 @@ const Form = () => {
                             <input type="password" className="form-control" id="exampleInputPassword1" value={password} onChange={(e) => { handlePassword = (e) }} />
                         </div>
                         
-                        <div id="kc-form-options" class="flex justify-between flex-wrap w-full">
-                            <div class="checkbox flex items-center">
+                        <div id="kc-form-options" class="d-flex" style={{justifyContent:"space-between"}}>
+                            <span className="checkbox p-2">
                                 <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" /><label class="text-gray-600 mx-2"> Remember me</label>
-                            </div>
-                            <div>
+                            </span>
+                            <span className="p-2">
                                 <Link className="text-decoration-none" to="/ResetPassword">
-                                    Reset password
+                                    Reset password..?
                                 </Link>
-                            </div>
+                            </span>
                         </div>
-                        
-
-
                         <div className="text-center mb-4">
                             <button type="submit" className="btn btn-danger">Log in</button>
                         </div>

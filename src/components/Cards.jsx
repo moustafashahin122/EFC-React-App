@@ -47,11 +47,12 @@ function Card(props) {
                             {title}
                         </p>
                         <p className="text-body txtn " >
-                            {description}                            <span className="link" >
+                            {description}                         
+                               {/* <span className="link" >
                                 <a href="https/google.com">
                                     view more
                                 </a>
-                            </span>
+                            </span> */}
                         </p>
                         <div className="d-flex my-2 justify-content-between" >
                             <p className="price m-auto" >

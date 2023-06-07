@@ -17,13 +17,24 @@
   position: relative;
 }
 #cartQuantity {
-  font-size: 0.8em;
-  background-color: rgb(110, 38, 29);
-  position: relative;
+  padding-left: 2px;
+  font-size: 1em;
+  /* background-color: rgb(110, 38, 29); */
   width: 20px;
   height: 20px;
   text-align: center;
-  right: 9px;
-  top: -10px;
   color: white;
 }
+
+
+.a{
+  position: absolute !important;
+  right: 62px !important;
+  top: 0px !important;
+}
+
+@media only screen and (max-width: 770px) {
+  .a{
+    position:static !important;
+  }
+  }

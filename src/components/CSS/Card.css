@@ -59,16 +59,13 @@ body {
   font-weight: bold;
 }
 .txtn {
-  height: 10rem;
-  overflow: scroll;
+  height: 5rem;
+  overflow: hidden;
   margin-top: 2rem;
-  font: 0.75em sans-serif;
+  font: 0.9em sans-serif
 }
 .c-button {
   text-align: center;
-}
-.c-button span {
-  /* padding: 2rem !important; */
 }
 .c-button input[type="button"] {
   border: none;
@@ -178,7 +175,7 @@ img {
 }
 
 span img {
-  width: 70px;
+  width: 38px;
   position: absolute;
   right: 9px;
   top: 7px;
