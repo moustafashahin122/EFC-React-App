@@ -1,29 +1,31 @@
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
+import React from "react";
+import Card from "./Cards";
+import Slide1 from "./slider1";
+import Card_Item from "./Card item";
+import { useSelector } from "react-redux";
 
-function Cart() {
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+const Cart = () => {
+  const full = useSelector((state) => state.Products.full);
+  const cartItems = useSelector((state) => state.Cart.cartItems);
 
+  console.log("cart");
+  console.log(cartItems);
+  let { Products } = useSelector((state) => state.Products);
+  Products = Products.filter((product) => product.id in cartItems && cartItems[product.id] !== 0);
+  console.log("products");
+  console.log(Products);
   return (
     <>
-      <Button variant="danger" onClick={handleShow}>
-        <i class="bi bi-cart4"></i>
-      </Button>
-
-      <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Cart</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <ul></ul>
-        </Offcanvas.Body>
-      </Offcanvas>
+      <div className='container'>
+        <div className='row'>
+          {Products.map((product) => {
+            return <Card key={product.id} product={product} />;
+          })}
+        </div>
+      </div>
     </>
   );
-}
+};
 
 export default Cart;

@@ -2,8 +2,13 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./CSS/Navbar.css";
 import Cart from "./Cart";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+
+  const { cartItemsCount } = useSelector((state) => state.Cart);
+
+
   return (
     <nav className="navbar navbar-expand-md bg-light mb-5 bg-body-secondary sticky-top shadow ">
       <div className="container">
@@ -43,11 +48,16 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Cart">
+                <button className="btn btn-danger">
+                  <span id="cartQuantity" className=" rounded-circle">{cartItemsCount}</span>
+                  <i class="bi bi-cart4"></i>
+                </button>
+              </Link>
+            </li>
           </ul>
-          <div id="cartHolder">
-            <Cart></Cart>
-            <span id="cartQuantity" className=" rounded-circle">0</span>
-          </div>
+
         </div>
       </div>
     </nav>
