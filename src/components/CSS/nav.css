@@ -7,8 +7,7 @@
   font-size: 2.2rem !important;
   font-family: 'Friz Quadrata Std';
   color: #BB2D3B !important ;
-}
+} */
 nav{
-  background-color: hsla(0, 0%, 100%, 0.541);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
-}  */
+  background-color: hsla(0, 0%, 100%, 0.986) !important;
+} 

@@ -13,42 +13,15 @@ import { Pagination, Navigation } from "swiper";
 export default function Slide1() {
   const [swiperRef, setSwiperRef] = useState(null);
 
-  let appendNumber = 4;
-  let prependNumber = 1;
 
-  const prepend2 = () => {
-    swiperRef.prependSlide([
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-    ]);
-  };
-
-  const prepend = () => {
-    swiperRef.prependSlide(
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-    );
-  };
-
-  const append = () => {
-    swiperRef.appendSlide(
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-    );
-  };
-
-  const append2 = () => {
-    swiperRef.appendSlide([
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-    ]);
-  };
 
   return (
     <>
       <Swiper
         onSwiper={setSwiperRef}
-        slidesPerView={4}
-        centeredSlides={true}
-        spaceBetween={30}
+        slidesPerView={6}
+        centeredSlides={false}
+        spaceBetween={10}
         pagination={{
           type: "fraction",
         }}
@@ -58,90 +31,67 @@ export default function Slide1() {
       >
         <SwiperSlide>
           <img
+
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
             srcset=""
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
             src="https://kfcprodnecmsimage.azureedge.net/cmsimages/kfc/imagestemp/desktop/9PcFiestbucket_EG14_En_1104.jpg"
             alt="Not Found"
-          ></img>{" "}
+          ></img>
         </SwiperSlide>
       </Swiper>
-
-      <p className="append-buttons">
-        <button onClick={() => prepend2()} className="prepend-2-slides">
-          Prepend 2 Slides
-        </button>
-        <button onClick={() => prepend()} className="prepend-slide">
-          Prepend Slide
-        </button>
-        <button onClick={() => append()} className="append-slide">
-          Append Slide
-        </button>
-        <button onClick={() => append2()} className="append-2-slides">
-          Append 2 Slides
-        </button>
-      </p>
     </>
   );
 }
